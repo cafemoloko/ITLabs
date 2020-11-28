@@ -1,4 +1,6 @@
 # bubble sort
+import random
+
 
 def bubble_sort(arr):
     n = len(arr)
@@ -7,10 +9,13 @@ def bubble_sort(arr):
         for j in range(0, n-i-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
 
 
-arr = [0, 64, 34, 20, 18, 90, 11, 14, 4]
-print(arr)
+if __name__ == "__main__":
 
-bubble_sort(arr)
-print(f"Sorted array: {arr}")
+    # generating a list of ten random numbers in range 0-30
+    unsorted_arr = (random.sample(range(0, 30), 10))
+    print(f"Unsorted array: {unsorted_arr}")
+    sorted_arr = (bubble_sort(unsorted_arr))
+    print(f"Sorted array: {sorted_arr}")
