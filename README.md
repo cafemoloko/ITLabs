@@ -1,5 +1,5 @@
 IT Labs 2018-2020
 
-variuos school assignments
+various school assignments
 
 use visely
