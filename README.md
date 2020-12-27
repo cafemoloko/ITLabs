@@ -1,5 +1,4 @@
 IT Labs 2018-2020
 
-various school assignments
+Various school assignments. Use visely.
 
-use visely
