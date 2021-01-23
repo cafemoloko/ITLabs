@@ -1,10 +1,4 @@
-""" Korzystając z biblioteki turtle oraz znanych mechanizmów programowania, 
-należy zaimplementować mechanizm rysowania szachownicy.
-
-Tworzenie należy uzależnić od dwóch argumentów:
-wielkość szachownicy (np. podanie 4 spowoduje stworzenie szachownicy 4x4 itp.)
-koloru szachownicy (gdy podamy czarny, szachownica będzie czarno biała) """
-
+# draw a chess board, parameters: board size and color 
 
 import turtle
 
@@ -25,7 +19,7 @@ if __name__ == "__main__":
     screen.setup(width=0.75, height=0.75) # sets window to 75% of the screen
     screen.title("Turtle Chessboard")
 
-    # numinput returns float, so size has to be converted to int, as it's value is used in loops
+    # numinput returns float, so size has to be converted to int, as its value is used in loops
     size = int(screen.numinput("Chessboard size", "Type the size of the chessboard: ", 8, minval=2, maxval=20))
     color = screen.textinput("Chessboard color", "Choose color: ")
 
