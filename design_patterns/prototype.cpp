@@ -5,30 +5,6 @@
 
 using namespace std;
 
-enum PROCESSOR_TYPE
-{
-  RYZEN,
-  ATHLON,
-  PHENOM
-};
-
-/**
- * Processor Prototype
- */
-
-class Processor
-{
-  public :
-
-    Processor() {}
-
-    virtual ~Processor() {}
-
-    virtual Processor* Clone() const= 0;
-
-    virtual void GetInfo() const= 0;
-};
-
 /**
  * Concrete VW Prototype
  */
