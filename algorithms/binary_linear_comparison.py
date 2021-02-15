@@ -36,6 +36,7 @@ def binary_search(arr, x):
 
     return -1
 
+
 @timed
 def linear_search(arr, x): 
     for i in range(len(arr)): 
@@ -49,12 +50,14 @@ if __name__ == "__main__":
     n = 10000000                          # 10.000.000 samples
     lim = 45 ** 5                         # from 0 to 184.528.125
 
-    arr, value = random_numbers(n, lim)    # array and searched value
-    print(f"Looking for: {value}")
-    arr.sort()
+   
+    for i in range(10):
+        arr, value = random_numbers(n, lim)    
+        print(f"Looking for: {value}")
+        arr.sort()
 
-    binary_search(arr, value)
-    linear_search(arr, value)
+        binary_search(arr, value)
+        linear_search(arr, value)
  
         
     
