@@ -11,10 +11,11 @@ def random_numbers(n, limit):
 
 def timed(function):
     def wrapper(*args, **kwargs):
-        start = time.time()
-        finish = time.time()
+        start = time.time() * 1000
+        function(*args, **kwargs)
+        finish = time.time() * 1000
         fname = function.__name__
-        print(f"{fname} took {finish-start} s to execute.")
+        print(f"{fname} took {finish-start: .4f} ms to execute.")
 
     return wrapper
 
